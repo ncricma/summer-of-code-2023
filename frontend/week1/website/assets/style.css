@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cambay', sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    /* width: 1440px; */
+    margin: auto;
+}
+
+/* ----------- first --------------  */
+#first{
+    height: 786px;
+    background-image: linear-gradient(rgba(74, 153, 211, 0.3), #fff);
+    /* border: 2px solid black; */
+}
+.navbar {
+    position: relative;
+    top: 45px;
+    left: 245px;
+    width: 935px;
+    height: 65px;
+    /* border: 2px solid black; */
+}
+
+.navbar li {
+    float: right;
+    list-style: none;
+    margin: 3px 3px;
+}
+.navbar li a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 30px;
+    position: relative;
+    top: 15px;
+    color: black;
+    font-weight: 800;
+}
+.navbar li a:active {
+    color: #4A99D3;
+    transition: 15ms;
+}
+
+.logo {
+    height: 80px;
+    float: left;
+    margin-left: 10px;
+    filter: contrast(5);
+}
+
+.carousel {
+    position: relative;
+    width: 860px;
+    height: 575px;
+    top: 75px;
+    left: 155px;
+    overflow: hidden;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+}
+
+.genB {
+    padding: 10px;
+    font-size: 30px;
+    background: #4A99D3;
+    color: aliceblue;
+    font-weight: bolder;
+    border: none;
+    text-align: center;
+}
+.genB:hover{
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    color: #4A99D3;
+    background: rgba(74, 153, 211, 0.3);
+}
+
+#prev{
+    float: left;
+    position: relative;
+    top: 360px;
+    left: 155px;
+}
+#next {
+    float: right;
+    position: relative;
+    top: 360px;
+    right: 342px;
+}
+
+/* ------------ second --------------  */
+#second {
+    position: relative;
+    width: 950px;
+    height: 1175px;
+    top: 40px;
+    left: 245px;
+    /* border: 2px solid red; */
+}
+
+.card {
+    /* border: 2px solid green; */
+    margin: 10px;
+    width: 344px;
+    height: 425px;
+    font-size: 16px;
+    line-height: 26px;
+    /* text-align: center; */
+    background-color: white;
+    box-shadow: 5px 20px 50px 0px rgba(74, 153, 211, 0.2);
+}
+
+.card img {
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+#box-1{
+    width: 344px;
+    height: 140px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    position: relative;
+    top: 20px;
+    left: 20px;    
+}
+#box-2{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    position: relative;
+    top: 20px;
+}
+#box-3 {
+    position: relative;
+    top: 260px;
+    left: 20px;
+}
+#box-4{
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    top: 560px;
+}
+details {
+    font-size: 14px;
+    color: #4A99D3;
+}
+
+details:hover {
+    cursor: pointer;
+}
+.content {
+    margin: 40px;
+}
+
+/* ------------ Third ---------- */
+#third{
+    /* border: 2px solid green; */
+    position: relative;
+    height: 476px;
+    top: 50px;
+    text-align: center;
+    background: rgba(74, 153, 211, 0.1);
+;
+}
+#how{
+    /* border: 2px solid black; */
+    position: relative;
+    width: 936px;
+    height: 286px;
+    top: 100px;
+    left: 259px;
+}
+#how h2{
+    color: #4a99d3;
+}
+
+.how-card{
+    /* border: 2px solid red; */
+    margin: 50px;
+    display: inline-block;
+    width: 196px;
+    height: 171px;
+    text-align: center;
+}
+.how-card h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+.how-card p{
+    font-size: 16px;
+}
+
+/* ------------ Fourth ------------ */
+#fourth{
+    /* border: 2px solid orange; */
+    width: 1195px;
+    height: 597px;
+    position: relative;
+    top: 100px;
+}
+#fourth h2{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+.clients-box{
+    /* border: 2px solid black; */
+    margin: 10px;
+    display: inline-block;
+}
+.clients-1{
+    height: 400px;
+    width: 670px;
+    position: relative;
+    top: 90px;
+    background: rgba(74, 153, 211, 0.1);
+}
+.clients-1 img{
+    width: 370px;
+    height: 440px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -40px;
+}
+.clients-2{
+    height: 250px;
+    width: 300px;
+    position: relative;
+    top: -65px;
+    left: 100px;
+    font-size: 16px;
+}
+.clients-2 img{
+    height: 30px;
+}
+.what-buttons{
+    float: right;
+    position: relative;
+    top: 480px;
+}
+
+/* ---------- Footer ---------- */
+footer{
+    height: 110px;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 120px;
+    background: rgba(74, 153, 211, 1);
+}
+
+.logo-f {
+    height: 95px;
+    filter: contrast(5);
+    padding: 0 220px;
+}
+footer:hover{
+    color: white;
+    cursor: pointer;
+}

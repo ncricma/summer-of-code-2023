@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+    <!-- section - 1 -->
+    <a name="home"></a>
+    <div id="first">
+        <nav class="navbar">
+            <img src="./assets/logo.png" class="logo" alt="logo">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#home" >Home</a></li>
+            </ul>
+        </nav>
+        <div class="carButton">
+            <button id="prev" class="genB" onclick="goPrev()">&lt;</button>
+            <button id="next" class="genB" onclick="goNext()">&gt;</button>
+        </div>
+        <div class="carousel">
+            <img src="https://picsum.photos/id/20/1000/500" alt="slide-1" class="slide">
+            <img src="https://picsum.photos/id/2/1000/500" alt="slide-2" class="slide">
+            <img src="https://picsum.photos/id/26/1000/500" alt="slide-3" class="slide">
+        </div>
+    </div>
+    
+    <!-- section-2  -->
+    <div id="second">
+        <div class="container">
+            <div id="box-1">
+                <h2>What we do to help our customers in digital era.</h2>
+            </div>
+
+            <div id="box-2" class="card">
+                <img src="./assets/01.png" alt="">
+                <div class="content">
+                    <h3>Send</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero temporibus, quisquam voluptatibus inventore a in sapiente iusto aperiam neque.</p>
+                    <details>
+                        <summary>Learn More</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, a?</p>
+                    </details>
+                </div>
+            </div>
+            <div id="box-3" class="card">
+                <img src="./assets/02.png" alt="">
+                <div class="content">
+
+                    <h3>Receive</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero temporibus, quisquam voluptatibus inventore a in sapiente iusto aperiam neque.</p>
+                    <details>
+                        <summary>Learn More</summary>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt distinctio ducimus voluptate nesciunt minima commodi?</p>
+                    </details>
+                </div>
+            </div>
+            <div id="box-4" class="card">
+                <img src="./assets/03.png" alt="">
+                <div class="content">
+
+                    <h3>Buy</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero temporibus, quisquam voluptatibus inventore a in sapiente iusto aperiam neque.</p>
+                    <details>
+                        <summary>Learn More</summary>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem blanditiis! Saepe voluptatibus ad labore ab rem?</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third  -->
+    <div id="third">
+        <div id="how">
+            <h2>How it Works</h2>
+            <div class="how-card">
+                <img src="./assets/pic1.png" alt="">
+                <h3>Create an account</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, at!</p>
+            </div>
+            <div class="how-card">
+                <img src="./assets/pic2.png" alt="">
+                <h3>Get authorization</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, ducimus!</p>
+            </div>
+            <div class="how-card">
+                <img src="./assets/pic3.png" alt="">
+                <h3>Enjoy the app</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, ducimus!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourth  -->
+    <div id="fourth">
+        <h2>What our clients say</h2>
+        <div class="clients-1 clients-box">
+            <img src="./assets/sunaina.png" alt="">
+
+        </div>
+        <div class="clients-2 clients-box">
+            <img src="./assets/quote-left.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi rerum, unde suscipit inventore doloremque! Rerum recusandae rem placeat dolorem ea laborum, ipsa provident deserunt, est, maxime nisi cum aliquam!
+            <h3>Suniana Das</h3>
+            </p>
+        </div>
+        <div class="what-buttons">
+            <button class="genB" >&lt;</button>
+            <button class="genB" >&gt;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img src="./assets/logo.png" class="logo-f" alt=""> Naveen Kumar
+    </footer>
+
+
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        var counter = 0;
+        slides.forEach(
+            (slide, index) => {
+                slide.style.left = `${index * 100}%`;
+            }
+        )
+
+        const goPrev = () => {
+                if (counter != 0) {
+                    counter--;
+                    slideImage();
+                }
+            }
+
+            const goNext = () => {
+                if (counter < slides.length - 1) {
+                    counter++;
+                    slideImage();
+                }
+            }
+            const slideImage = () => {
+                slides.forEach(
+                    (slide) => {
+                        slide.style.transform = `translateX(-${counter * 100}%)`;
+                    }
+                )
+            }
+    </script>
+</body>
+</html>
