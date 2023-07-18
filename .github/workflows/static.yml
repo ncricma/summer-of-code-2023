@@ -37,8 +37,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
-          repository: summer-of-code-2023/frontend/week1/website
-          path: website
+          path: frontend/week1/website
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
